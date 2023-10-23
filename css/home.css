@@ -1,0 +1,344 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {}
+
+.nav-right {
+    padding-top: 15px;
+}
+
+.nav-right>a {
+    margin: 10px;
+    color: black;
+}
+
+.nav-left {
+    padding-top: 15px;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100px;
+    justify-content: center;
+    width: 160px;
+    height: 40px;
+}
+
+.login-btn>i {
+    padding-left: 5px;
+}
+
+.slider {
+    position: relative;
+    margin-top: 10px;
+}
+
+.slides {}
+
+.item img {
+    width: 100%;
+    height: 520px;
+}
+
+.slider .slides .item {
+    display: none;
+}
+
+.slider .slides .item p {
+    position: absolute;
+    top: 190px;
+    right: 120px;
+    font-size: 1.5em;
+}
+
+.slider .slides .active {
+    display: block;
+    animation: fadeIn 3s
+}
+
+.icon {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.icon i:hover {
+    color: antiquewhite;
+}
+
+@-webkit-keyframe fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+
+/*product section*/
+
+.home-page-priduct {
+    padding: 20px 10px;
+    font-size: 1em;
+}
+
+.row {}
+
+.shop-card {
+    text-align: center;
+    box-shadow: 0px 2px 8px 0px grey;
+    margin: 10px 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.shop-card .image-sec {
+    position: relative;
+}
+
+.shop-card .image-sec img {
+    width: 60%;
+}
+
+.shop-card .image-sec .offer {
+    background-color: rgb(199, 47, 47);
+    color: aliceblue;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    padding: 2px 2px;
+}
+
+.shop-card .image-sec .stars {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.shop-card .image-sec .stars i {
+    color: gold;
+}
+
+.shop-card .title {
+    margin: 15px;
+}
+
+.shop-card .buttens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-card .buttens .right {}
+
+.shop-card .buttens .right span {}
+
+.shop-card .buttens .left {
+    display: flex;
+}
+
+.shop-card .buttens .left .extend-btn {
+    margin-left: 10px;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    width: 40px;
+    cursor: pointer;
+    transition: 0.75s;
+}
+
+.shop-card .buttens .left .extend-btn:hover {
+    width: 100px;
+}
+
+.b-text {
+    display: none;
+}
+
+.shop-card .buttens .left .extend-btn:hover .b-text {
+    display: block;
+    color: black;
+}
+
+.shop-card .buttens .left .extend-btn i {
+    color: black;
+    padding: 3px 11px;
+}
+
+
+/*offer*/
+
+.super-offer-section {
+    padding: 20px;
+    font-size: 1em;
+}
+
+.super-offer-section .col-lg-9 {}
+
+.super-offer-section .col-lg-9 .super-offer-box {
+    text-align: center;
+    box-shadow: 0px 2px 8px 0px black;
+    border-radius: 8px;
+    margin: 0px 10px;
+}
+
+.super-offer-section .col-lg-9 .super-offer-box .ttitle {
+    color: aliceblue;
+    background-color: red;
+    padding: 8px 30px;
+    display: inline-block;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.super-offer-section .col-lg-9 .super-offer-box .body {}
+
+.super-offer-section .col-lg-9 .super-offer-box .body .col-lg-4 {}
+
+.super-offer-section .col-lg-9 .super-offer-box .body .col-lg-4 .image-container {
+    text-align: center;
+    padding: 30px;
+}
+
+.super-offer-section .col-lg-9 .super-offer-box .body .col-lg-4 .image-container img {
+    width: 100%;
+}
+
+.super-offer-section .col-lg-9 .super-offer-box .body .col-lg-8 {}
+
+.super-offer-section .col-lg-9 .super-offer-box .body .col-lg-8 .spesification {
+    padding: 30px 5px;
+}
+
+.super-offer-section .col-lg-9 .super-offer-box .body .col-lg-8 .spesification .price-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.super-offer-section .col-lg-9 .super-offer-box .body .col-lg-8 .spesification .price-row .price {
+    margin-left: 50px;
+    font-size: 1.5em;
+}
+
+.super-offer-section .col-lg-9 .super-offer-box .body .col-lg-8 .spesification .price-row .off {
+    color: aliceblue;
+    background-color: red;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.super-offer-section .col-lg-9 .super-offer-box .body .col-lg-8 .spesification .title {
+    margin: 40px 0px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.super-offer-section .col-lg-9 .super-offer-box .body .col-lg-8 .spesification .counterdown {
+    border-top: 1px solid black;
+    margin: 10px 30px;
+    padding-top: 15px;
+}
+
+.super-offer-section .col-lg-9 .super-offer-box .body .col-lg-8 .spesification .remaining-time {}
+
+.super-offer-section .col-lg-3 {}
+
+.super-offer-section .col-lg-3 .baner {
+    text-align: center;
+    padding: 0px 5px;
+}
+
+.super-offer-section .col-lg-3 .baner img {
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px 0px;
+    width: 80%;
+}
+
+.drag-list .shop-card .image-sec img {
+    width: 60% !important;
+    margin: auto;
+    text-align: center;
+}
+
+.owl-stage-outer {
+    direction: ltr;
+}
+
+.drag-list .title span {
+    padding: 0px 20px;
+    font-size: 1.2em;
+    border-bottom: 2px solid red;
+    margin-right: 20px;
+}
+
+
+/*footer*/
+
+footer {
+    color: antiquewhite;
+    font-size: 1em;
+    background-color: rgb(71, 84, 97);
+}
+
+footer .right {
+    padding: 5px 30px;
+}
+
+footer .right .title {
+    padding: 5px;
+    font-size: 1.4em;
+}
+
+footer .right .des {}
+
+footer .left {
+    padding: 80px;
+}
+
+footer .left .title {}
+
+footer .left .social {}
+
+footer .left .social a {
+    padding: 0px 5px;
+    margin-right: 16px;
+    color: white;
+}
+
+footer .buttom {
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(31, 30, 30);
+}
